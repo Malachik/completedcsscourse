@@ -1,0 +1,91 @@
+:root {
+  /* fonts */
+  --font-primary: "Inter", serif;
+  --font-secondary: "Source Code Pro", serif;
+  /* colors */
+  --clr-dark: #030712;
+
+  --clr-slate50: #f8fafc; /* slate50 */
+  --clr-slate100: #f1f5f9; /* slate100 */
+  --clr-light: #e2e8f0; /* slate200 */
+  --clr-slate300: #cbd5e1; /* slate300 */
+  --clr-text: #94a3b8; /* slate400 */
+  --clr-slate800: #1e293b; /* slate800 */
+  --clr-bg: #0a101f;
+  --clr-muted: #6b7c94;
+  /* SHADOWS */
+  --shadow-xl: 0 19px 38px rgba(15, 23, 42, 0.3),
+    0 15px 12px rgba(15, 23, 42, 0.22);
+
+  /* sizes */
+  --sizes-xxs: 0.5rem;
+  --sizes-xs: 0.75rem;
+  --sizes-sm: 0.875rem;
+  --sizes-1rem-base: 1rem;
+  --sizes-lg: 1.125rem;
+  --sizes-xl: 1.25rem;
+  --sizes-2xl: 1.5rem;
+  --sizes-3xl: 1.875rem;
+  --sizes-4xl: 2.25rem;
+  --sizes-5xl: 3rem;
+  --sizes-6xl: 3.75rem;
+  --sizes-7xl: 4.5rem;
+  --sizes-8xl: 6rem;
+  --sizes-9xl: 8rem;
+  --sizes-10xl: 10rem;
+  --size-11x25: 11.25rem;
+  --size-12: 12.5rem;
+  /*  SPACING */
+  --letter-spacing-005: -0.05em;
+  --flow-spacing: 1rem;
+  --flow-spacing2rem: 2rem;
+  --margin-top-spacing: 1rem;
+  --margin-top-0spacing: 0;
+  --padding-2rem: 2rem;
+  --padding-1rem: 1rem;
+  --margin-bottom: 2.5rem;
+  --margin-bottom-1rem: 1rem;
+  --margin-bottom-1rem-0: 1rem 0;
+  --margin-bottom-2rem-0: 2rem 0;
+  --margin-bottom-2rem: 2rem;
+  --margin-bottom-3rem: 3rem;
+  --margin-top-2rem: 2rem;
+  --margin-top-1rem: 1rem;
+  --margin-0: 0;
+  --gap-1rem: 1rem;
+  --gap-6rem: 6rem;
+  --gap-large-rem: 2.5rem;
+  --margin-left: 0.25rem;
+  --margin-bottom-2x5rem: 0.25rem;
+  --margin0x5-0: 0.5rem 0;
+  --margin-auto: 0 auto;
+
+  /* LINE HEIGHT */
+  --line-height-1: 1;
+  --max-width-65: 65ch;
+  --max-width-57: 57ch;
+  --max-width-60: 60ch;
+  --max-width-70: 70ch;
+  /* CENTER */
+  --margin-inline-auto: auto;
+  --border-radius6x: 6px;
+  --text-center: center;
+  /* FONTWEIGHT */
+  --fontweight700: 700;
+  --fontweight900: 900;
+}
+
+.footer {
+  text-align: var(--text-center);
+}
+
+.footer__h2 {
+  font-size: var(--sizes-xs);
+  font-weight: 400;
+  color: var(--clr-text);
+}
+
+.footer__p {
+  font-size: var(--sizes-xxs);
+  margin-bottom: var(--margin-bottom-1rem);
+}

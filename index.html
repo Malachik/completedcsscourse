@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="patrick learning CSS from the Slaying The Dragon CSS course"
+    />
+    <meta name="Arthur" content="Patrick" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css"
+    <title>Flexbox and Grid Project</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style sheets -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/components/header.css" />
+    <link rel="stylesheet" href="styles/components/hero.css" />
+    <link rel="stylesheet" href="/styles/components/pricing.css" />
+    <link rel="stylesheet" href="/styles/components/about.css" />
+    <link rel="stylesheet" href="styles/components/testmonial.css" />
+    <link rel="stylesheet" href="styles/components/features.css" />
+    <link rel="stylesheet" href="styles/components/faq.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+    <link rel="stylesheet" href="styles/components/cta.css" />
+    <link rel="stylesheet" href="styles/components/footer.css" />
+    <link rel="stylesheet" href="styles/modernnormalize.css" />
+  </head>
+  <body>
+    <!-- ENSURE SPACE  IN SQUARE BRACKETS  [ EXAMPLE  ]=CORRECT  [EXAMPLE ] =INCORRECT -->
+    <header class="[ header ] [ container ]">
+      <div class="title-wrapper">
+        <img
+          class="[ header-logo-size-7xl ] [ header-logo-border-bottom-radius ] [ header-logo-object-fit-cover ] [ logo-size-8xl ]"
+          src="public/logo.png"
+          alt="Girl holding a cup of coffee"
+          width="720"
+          height="972"
+        />
+        <span
+          class="header-title [ fs-xl ] [ ff-secondary ] [ fw-700 ] [ ls-tight ] [ tt-uppercase ] [ title-fs-2xl ]"
+          >Lorem, ipsum dolor.</span
+        >
+      </div>
+      <button
+        class="[ Header-bars-icon-size-2xl ] [ Header-bars-icon-clr-light ] [ header-bars-btn-hidden ]"
+        aria-label="Menu button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+      <!-- NAV-SOCIALS AREA -->
+
+      <nav
+        class="[ header-menu-hidden ] [ header-menu-flex ] [ header-menu-gap ]"
+      >
+        <div class="social-wrapper">
+          <a
+            title="Github"
+            aria-label="github link"
+            class="[ header-socials-LineH-0 ] [ header-socials-decoration-0 ] [ header-socials-FS-LG ] [ header-socials-clr-light ] [ header-socials-bg-clr-dark-800 ] [ header-socials-padding ] [ header-socials-b-radius ] [ header-socials-transition ] [ socials-fs-xl ]"
+            href="https://github.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="lni lni-github" aria-hidden="true"></i
+          ></a>
+          <a
+            title="Youtube"
+            aria-label="Youtube link"
+            class="[ header-socials-LineH-0 ] [ header-socials-decoration-0 ] [ header-socials-FS-LG ] [ header-socials-clr-light ] [ header-socials-bg-clr-dark-800 ] [ header-socials-padding ] [ header-socials-b-radius ] [ header-socials-transition ] [ socials-fs-xl ]"
+            href="https://youtube.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="lni lni-youtube" aria-hidden="true"></i
+          ></a>
+          <a
+            title="discord"
+            aria-label="discord link"
+            class="[ header-socials-LineH-0 ] [ header-socials-decoration-0 ] [ header-socials-FS-LG ] [ header-socials-clr-light ] [ header-socials-bg-clr-dark-800 ] [ header-socials-padding ] [ header-socials-b-radius ] [ header-socials-transition ] [ socials-fs-xl ]"
+            href="https://discord.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            ><i class="lni lni-github" aria-hidden="true"></i
+          ></a>
+        </div>
+
+        <!-- SEPARATOR -->
+        <div class="seperator-padding-top"></div>
+        <!-- SIGN IN BTN -->
+        <a
+          class="[ sign-in-btn-txt-dec-0 ] [ sign-in-btn-FS-xs ] [ sign-in-btn-clr-muted ] [ sign-in-btn-clr-transition-light ] [ sign-in-btn-FW-700 ] [ sign-in-btn-fs-sm ]"
+          href="#"
+          >sign in</a
+        >
+        <a
+          class="[ btn ] [ enter-app-arrow-btn-FS-xs ] [ enter-app-btn-fs-sm ]"
+          href="#"
+          >Enter App<svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="[ enter-app-arrow-W-base ][ enter-app-arrow-inline-block ]"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd"
+            /></svg
+        ></a>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero section flow">
+        <img
+          class="hero__img hero__img-center"
+          src="/public/hero.png
+          alt="Guy sitting in a wheel chair"
+          width="1386"
+          height="1809"
+          loading="lazy"
+        />
+
+        <h1 class="hero__title">
+          Become the web developer <br class="break" />you were always wanted to
+          be.
+        </h1>
+        <p class="hero__p1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+          facilis, eum magni quo reprehenderit, temporibus porro veniam rem
+          ipsam, quisquam voluptate.
+        </p>
+        <p class="hero__p2">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
+          impedit voluptatibus aliquid tempore? Deserunt exercitationem magni
+          fugiat suscipit odit quasi excepturi sapiente doloribus fugit
+          perferendis quis, possimus maxime amet molestiae numquam aperiam
+          aliquid libero culpa. Eius doloribus optio, deleniti nihil illum
+          deserunt iure minus veniam.
+          <strong>I currently learning a CSS course </strong>and
+          <strong> Lorem, ipsum dolor.</strong>, Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. <strong>CSS</strong> -
+          <strong>ReactJS </strong>- <strong>NextJS </strong>Lorem ipsum dolor,
+          sit amet consectetur adipisicing elit.-
+          <strong>Lorem ipsum dolor sit amet..</strong>
+        </p>
+        <a class="hero__btn btn" href="#">Preview Course</a>
+      </section>
+      <!-- PRICING -->
+      <section class="pricing container section">
+        <h2 class="title">lorem</h2>
+
+        <div class="pricing__wrapper">
+          <div class="pricing__box pricing__box-0margin pricing__box--jav">
+            <div>
+              <h3 class="pricing__h3">lorem</h3>
+              <p class="pricing__p1">Lorem, ipsum dolor.</p>
+            </div>
+            <div>
+              <p class="pricing__p2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid deleniti quam et molestiae similique, sit laudantium
+                quas ad. Cum impedit voluptatibus quibusdam excepturi quaerat,
+                culpa sapiente aut eos magnam autem minus accusantium. Debitis
+                cumque cum sapiente laborum est, distinctio ex, reprehenderit
+                qui dicta tempora commodi!
+              </p>
+              <button class="btn pricing__btn">Learn Now</button>
+            </div>
+          </div>
+
+          <div class="pricing__box pricing__box--css">
+            <div>
+              <h3 class="pricing__h3">CSS</h3>
+              <p class="pricing__p1">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div>
+              <p class="pricing__p2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                ipsa minima debitis error minus at, aspernatur adipisci iusto
+                consectetur excepturi. Possimus nihil recusandae ipsa illo et,
+                iste ratione. Illo blanditiis, laborum voluptates sequi
+                mollitia, inventore error sunt exercitationem minus beatae
+                incidunt cum neque ab amet.
+              </p>
+              <button class="btn pricing__btn">Learn Now</button>
+            </div>
+          </div>
+
+          <div class="pricing__box pricing__box--next">
+            <div>
+              <h3 class="pricing__h3">NextJS</h3>
+              <p class="pricing__p1">Lorem ipsum dolor sit.</p>
+            </div>
+            <div>
+              <p class="pricing__p2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repellendus natus, cum quisquam inventore porro eligendi neque
+                quod expedita in dignissimos quas a eius maiores modi error
+                dolores! Officia cupiditate sequi quae, iste tenetur ab delectus
+                vitae impedit illum, et consequatur ullam incidunt sapiente
+                expedita odio?
+              </p>
+              <button class="btn pricing__btn">Learn Now</button>
+            </div>
+          </div>
+
+          <div class="pricing__box pricing__box--react">
+            <div>
+              <h3 class="pricing__h3">ReactJS</h3>
+              <p class="pricing__p1">Lorem ipsum dolor sit.</p>
+            </div>
+            <div>
+              <p class="pricing__p2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Nostrum sunt velit molestiae facilis exercitationem non maiores
+                sit in perspiciatis unde fugit rem praesentium iure dolore enim,
+                voluptates voluptatibus commodi deserunt accusamus facere quasi
+                quas inventore nesciunt fugiat. Fugit aut mollitia consequuntur
+                et? Officiis, eius fugiat!
+              </p>
+              <button class="btn pricing__btn">Loren Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section class="about section container">
+        <h2 class="title">about</h2>
+        <div class="about__wrapper">
+          <!-- BOX1 -->
+          <div class="about__box1">
+            <h2 class="about__h2">Slaying The Dragon</h2>
+            <p class="about__p1">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              omnis molestiae nihil fugiat quasi odit accusamus ab
+              <a href="">Lorem ipsum dolor sit.</a>magnam? Nemo unde possimus
+              perferendis natus veritatis, quaerat alias animi a porro!
+              Repudiandae autem, cupiditate sunt odit minima, distinctio eaque
+              fugit provident magni magnam velit a aperiam iste?
+            </p>
+            <p class="about__p2">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis cupiditate voluptas pariatur quis nam! Voluptas aperiam,
+              ea molestias nemo voluptate porro nostrum quae dolorum nisi ipsa
+              fugiat, velit debitis nam mollitia perspiciatis? Quo harum,
+              obcaecati illum neque cupiditate doloremque laborum velit dicta
+              enim fuga iste molestias voluptatum alias illo. Eligendi?
+            </p>
+            <button class="btn about__btn" aria-label="discord button">
+              Learn Now
+              <i
+                class="lni lni-discord about__discord-icon"
+                aria-hidden="true"
+              ></i>
+            </button>
+          </div>
+          <!-- BOX2 -->
+          <div class="about__box2">
+            <div>
+              <h3 class="about__h3">Lorem, ipsum dolor.</h3>
+              <p class="about__stat">
+                151,000 <span class="about__span">+ subs</span>
+              </p>
+            </div>
+
+            <div>
+              <h3 class="about__h3">Lorem, ipsum dolor.</h3>
+              <p class="about__stat">
+                10000,000 <span class="about__span">+ views</span>
+              </p>
+            </div>
+
+            <div>
+              <h3 class="about__h3">Lorem ipsum dolor sit.</h3>
+              <p class="about__stat">
+                833,000 <span class="about__span">+ watch hours</span>
+              </p>
+            </div>
+
+            <div>
+              <h3 class="about__h3">Lorem ipsum dolor sit.</h3>
+              <p class="about__stat">
+                20 <span class="about__span">+ videos uploaded</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---TESTIMONIAL ------>
+      <section class="test section container">
+        <h2 class="title">peace and Love</h2>
+        <h2 class="test__h2">Testimonials</h2>
+        <p class="test__p1">
+          Just a handful of the many thoughtful and encouraging testimonials
+          people have shared about their experience. More here:
+          <a href="#">peace and Love</a>
+        </p>
+        <div class="test__wrapper">
+          <div class="test__box test__box--0margin .test__box-flex">
+            <p class="test__p2">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              enim eligendi eveniet aut assumenda quos consequatur numquam
+              maxime ad tenetur voluptatibus, exercitationem facere atque eaque
+              quo. Mollitia autem reprehenderit voluptatum quidem labore
+              assumenda itaque temporibus, expedita totam tenetur ea dignissimos
+              quas sapiente, facilis velit doloremque eos officia. Ipsam ratione
+              consequuntur mollitia vero. Distinctio, hic fugiat?""
+            </p>
+            <p class="test__p3">@lorem2</p>
+          </div>
+          <div class="test__box .test__box-flex">
+            <p class="test__p2">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              laudantium dicta non ratione maxime fugiat nihil accusantium at
+              excepturi veritatis quas voluptatum harum optio quia incidunt
+              minus. Veritatis nemo vel consequuntur ad dicta, possimus iste
+              distinctio, maxime cumque numquam eaque! Nemo eum, quisquam, quasi
+              dolor itaque nihil necessitatibus expedita laborum quod
+              temporibus, nam nostrum provident!"
+            </p>
+            <p class="test__p3">@lorem2</p>
+          </div>
+          <div class="test__box .test__box-flex">
+            <p class="test__p2">
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+              architecto quos autem perferendis tempore aspernatur corrupti
+              voluptatem ipsam exercitationem est nostrum amet, voluptatibus
+              blanditiis laboriosam eos, saepe aliquid velit nisi porro at cum.
+              Maxime alias ea accusamus earum ex, quidem iusto quo repellendus
+              quas dolorum quos magnam culpa error qui esse sit doloribus eum
+              odit."
+            </p>
+            <p class="test__p3">@lorem2</p>
+          </div>
+          <div class="test__box .test__box-flex">
+            <p class="test__p2">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              eveniet voluptates vel veritatis ad reprehenderit? Adipisci
+              corrupti dolorum, hic quas ducimus tempora possimus soluta a animi
+              facilis consequuntur earum tempore ad itaque, id officiis quae
+              pariatur quasi dolor enim laborum labore sint dicta? In
+              consectetur ab aliquam, nihil reiciendis blanditiis minima
+              accusantium nesciunt doloremque est."
+            </p>
+            <p class="test__p3">@lorem2</p>
+          </div>
+          <div class="test__box .test__box-flex">
+            <p class="test__p2">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              eveniet voluptates vel veritatis ad reprehenderit? Adipisci
+              corrupti dolorum, hic quas ducimus tempora possimus soluta a animi
+              facilis consequuntur earum tempore ad itaque, id officiis quae
+              pariatur quasi dolor enim laborum labore sint dicta? In
+              consectetur ab aliquam, nihil reiciendis blanditiis minima
+              accusantium nesciunt doloremque est."
+            </p>
+            <p class="test__p3">@lorem2</p>
+          </div>
+          <div class="test__box .test__box-flex">
+            <p class="test__p2">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              eveniet voluptates vel veritatis ad reprehenderit? Adipisci
+              corrupti dolorum, hic quas ducimus tempora possimus soluta a animi
+              facilis consequuntur earum tempore ad itaque, id officiis quae
+              pariatur quasi dolor enim laborum labore sint dicta? In
+              consectetur ab aliquam, nihil reiciendis blanditiis minima
+              accusantium nesciunt doloremque est."
+            </p>
+            <p class="test__p3">@lorem2</p>
+          </div>
+          <div class="test__box .test__box-flex">
+            <p class="test__p2">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              eveniet voluptates vel veritatis ad reprehenderit? Adipisci
+              corrupti dolorum, hic quas ducimus tempora possimus soluta a animi
+              facilis consequuntur earum tempore ad itaque, id officiis quae
+              pariatur quasi dolor enim laborum labore sint dicta? In
+              consectetur ab aliquam, nihil reiciendis blanditiis minima
+              accusantium nesciunt doloremque est."
+            </p>
+            <p class="test__p3">@lorem2</p>
+          </div>
+          <div class="test__box t.test__box-flex">
+            <p class="test__p2">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              eveniet voluptates vel veritatis ad reprehenderit? Adipisci
+              corrupti dolorum, hic quas ducimus tempora possimus soluta a animi
+              facilis consequuntur earum tempore ad itaque, id officiis quae
+              pariatur quasi dolor enim laborum labore sint dicta? In
+              consectetur ab aliquam, nihil reiciendis blanditiis minima
+              accusantium nesciunt doloremque est."
+            </p>
+            <p class="test__p3">@lorem2</p>
+          </div>
+          <div class="test__box t.test__box-flex">
+            <p class="test__p2">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              eveniet voluptates vel veritatis ad reprehenderit? Adipisci
+              corrupti dolorum, hic quas ducimus tempora possimus soluta a animi
+              facilis consequuntur earum tempore ad itaque, id officiis quae
+              pariatur quasi dolor enim laborum labore sint dicta? In
+              consectetur ab aliquam, nihil reiciendis blanditiis minima
+              accusantium nesciunt doloremque est."
+            </p>
+            <p class="test__p3">@lorem2</p>
+          </div>
+          <div class="test__box .test__box-flex">
+            <p class="test__p2">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              eveniet voluptates vel veritatis ad reprehenderit? Adipisci
+              corrupti dolorum, hic quas ducimus tempora possimus soluta a animi
+              facilis consequuntur earum tempore ad itaque, id officiis quae
+              pariatur quasi dolor enim laborum labore sint dicta? In
+              consectetur ab aliquam, nihil reiciendis blanditiis minima
+              accusantium nesciunt doloremque est."
+            </p>
+            <p class="test__p3">@lorem2</p>
+          </div>
+          <div class="test__box .test__box-flex">
+            <p class="test__p2">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              eveniet voluptates vel veritatis ad reprehenderit? Adipisci
+              corrupti dolorum, hic quas ducimus tempora possimus soluta a animi
+              facilis consequuntur earum tempore ad itaque, id officiis quae
+              pariatur quasi dolor enim laborum labore sint dicta? In
+              consectetur ab aliquam, nihil reiciendis blanditiis minima
+              accusantium nesciunt doloremque est."
+            </p>
+            <p class="test__p3">@lorem2</p>
+          </div>
+          <div class="test__box .test__box-flex">
+            <p class="test__p2">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              eveniet voluptates vel veritatis ad reprehenderit? Adipisci
+              corrupti dolorum, hic quas ducimus tempora possimus soluta a animi
+              facilis consequuntur earum tempore ad itaque, id officiis quae
+              pariatur quasi dolor enim laborum labore sint dicta? In
+              consectetur ab aliquam, nihil reiciendis blanditiis minima
+              accusantium nesciunt doloremque est."
+            </p>
+            <p class="test__p3">@lorem2</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----FEATURES----- -->
+      <section class="features section container">
+        <h2 class="title">features</h2>
+        <div class="features__wrapper">
+          <div class="features__content1">
+            <h2 class="features__h2">A Nicer way to learn</h2>
+            <p class="features__p1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              officia ex voluptatum vel odio, voluptas obcaecati recusandae
+              adipisci facilis quibusdam dolorum.
+            </p>
+          </div>
+          <!-- ------content box 2------------ -->
+          <div class="features__content2">
+            <div class="features__box features__box-0margin">
+              <div class="features__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"
+                  />
+                  <path
+                    d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"
+                  />
+                  <path
+                    d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__h3">Beginner friendly</h3>
+              <p class="features__box-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt alias sequi excepturi corrupti porro labore illo et,
+                optio vel deleniti, temporibus nisi voluptatibus, delectus
+                deserunt.
+              </p>
+            </div>
+            <div class="features__box">
+              <div class="features__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"
+                  />
+                  <path
+                    d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"
+                  />
+                  <path
+                    d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__h3">Beginner friendly</h3>
+              <p class="features__box-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt alias sequi excepturi corrupti porro labore illo et,
+                optio vel deleniti, temporibus nisi voluptatibus, delectus
+                deserunt.
+              </p>
+            </div>
+            <div class="features__box">
+              <div class="features__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"
+                  />
+                  <path
+                    d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"
+                  />
+                  <path
+                    d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__h3">Beginner friendly</h3>
+              <p class="features__box-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt alias sequi excepturi corrupti porro labore illo et,
+                optio vel deleniti, temporibus nisi voluptatibus, delectus
+                deserunt.
+              </p>
+            </div>
+            <div class="features__box">
+              <div class="features__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"
+                  />
+                  <path
+                    d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"
+                  />
+                  <path
+                    d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__h3">Beginner friendly</h3>
+              <p class="features__box-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt alias sequi excepturi corrupti porro labore illo et,
+                optio vel deleniti, temporibus nisi voluptatibus, delectus
+                deserunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------------------------FAQ------------------------------------------------- -->
+
+      <section class="faq section container">
+        <h2 class="title">faq</h2>
+        <!-- -------------------------------------CONTENT1-------------------------------------------- -->
+        <div class="faq__content1-wrapper">
+          <h2 class="faq__h2">Frequently asked questions</h2>
+          <p class="faq__p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            alias sequi excepturi corrupti porro labore illo et, optio vel
+            deleniti, temporibus nisi voluptatibus, delectus deserunt.
+          </p>
+        </div>
+        <!------------------------------------------ CONTENT2 ------------------------------------------>
+        <div class="content2-wrapper">
+          <div class="faq__box faq__box-0margin">
+            <h3 class="faq__box-h3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.?
+            </h3>
+            <p class="faq__box-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              alias sequi excepturi corrupti porro labore illo et, optio vel
+              deleniti, temporibus nisi voluptatibus, delectus deserunt.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-h3">Is there a free demo I can try?</h3>
+            <p class="faq__box-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              alias sequi excepturi corrupti porro labore illo et, optio vel
+              deleniti, temporibus nisi voluptatibus, delectus deserunt.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-h3">Is there a free demo I can try?</h3>
+            <p class="faq__box-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              alias sequi excepturi corrupti porro labore illo et, optio vel
+              deleniti, temporibus nisi voluptatibus, delectus deserunt.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-h3">Is there a free demo I can try?</h3>
+            <p class="faq__box-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              alias sequi excepturi corrupti porro labore illo et, optio vel
+              deleniti, temporibus nisi voluptatibus, delectus deserunt.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-h3">Is there a free demo I can try?</h3>
+            <p class="faq__box-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              alias sequi excepturi corrupti porro labore illo et, optio vel
+              deleniti, temporibus nisi voluptatibus, delectus deserunt.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-h3">Is there a free demo I can try?</h3>
+            <p class="faq__box-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              alias sequi excepturi corrupti porro labore illo et, optio vel
+              deleniti, temporibus nisi voluptatibus, delectus deserunt.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-h3">Is there a free demo I can try?</h3>
+            <p class="faq__box-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              alias sequi excepturi corrupti porro labore illo et, optio vel
+              deleniti, temporibus nisi voluptatibus, delectus deserunt.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-h3">Is there a free demo I can try?</h3>
+            <p class="faq__box-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              alias sequi excepturi corrupti porro labore illo et, optio vel
+              deleniti, temporibus nisi voluptatibus, delectus deserunt.
+            </p>
+          </div>
+          <div class="faq__box">
+            <h3 class="faq__box-h3">Is there a free demo I can try?</h3>
+            <p class="faq__box-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              alias sequi excepturi corrupti porro labore illo et, optio vel
+              deleniti, temporibus nisi voluptatibus, delectus deserunt.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------------CTA ----------------------------->
+      <section class="cta section flow">
+        <div>
+          <img
+            class="cta__img cta__img-center"
+            src="public/cta.png"
+            alt="Guy sitting in a wheel chair"
+            width="1020"
+            height="1407"
+            loading="lazy"
+          />
+        </div>
+        <div class="cta-content-wrapper flow">
+          <h1 class="cta__h2">You have choose upon your goal.</h1>
+          <p class="cta__p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            dolorem neque praesentium tempora eius nulla aut ea ab quae ipsam,
+            dolor quos aperiam ducimus error sed necessitatibus sapiente nemo
+            fugiat?
+          </p>
+          <a class="cta__btn btn" href="#"
+            >My Goals
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6 cta__icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634Zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866Zm2.023 6.828a.75.75 0 1 0-1.06-1.06 3.75 3.75 0 0 1-5.304 0 .75.75 0 0 0-1.06 1.06 5.25 5.25 0 0 0 7.424 0Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- -------------------------FOOTER---------------- -->
+    <footer class="footer section container">
+      <h2 class="footer__h2">Setting my goals by slaying the dragon</h2>
+      <p class="footer__p">&copy;Patrick learning CSS</p>
+    </footer>
+  </body>
+</html>
